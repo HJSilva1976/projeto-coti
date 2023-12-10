@@ -1,0 +1,460 @@
+//variaveis
+$write: #FFFFFF;
+$texto: #404040;
+$title: #1B1918;
+$brandi: #003366;
+$btn: #16E5D2;
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+//#beneficios, #h4Confira, #faleConosco{
+  //  scroll-margin-top: 201px;
+//}
+a {
+    text-decoration: none;
+}
+
+
+
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+    margin: 0;
+}
+
+@mixin btn() {
+    display: inline-block;
+    background-color: $btn;
+    color: #000000;
+    border-radius: 3px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding: 11px 22px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $brandi;
+    }
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+.heroSection {
+    background-image: url(../img/banner-empresas\ 1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 654px;
+
+
+    .btn {
+        @include btn();
+        margin-top: 23px;
+
+
+
+    }
+
+
+    .header {
+
+        .container {
+
+            display: flex;
+            justify-content: space-between;
+
+            .retanguloLogo {
+                width: 150px;
+                height: 200px;
+                background-color: #FFFFFF;
+                margin-top: 1px;
+                border-bottom-left-radius: 17px;
+                border-bottom-right-radius: 17px;
+
+                .logo {
+
+                    margin: 38px 26px 40px 26px;
+
+                }
+
+            }
+
+            .menu {
+                // background-color: yellow;
+                margin-top: 78px;
+               
+
+                a {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    color: $write;
+                    margin-left: 68px;
+
+                    outline: none;
+
+                    &:hover{
+                        border-bottom: 2px solid $btn;
+                    }
+                    
+                    
+                }
+            }
+
+        }
+    }
+
+    .redesSocias {
+        padding: 10px;
+        row-gap: 10px;
+        border-radius: 0 5px 5px 0;
+        background: $brandi;
+        position: fixed;
+        left: 0;
+        top: 50%;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a{
+            display: inline-block;
+            &:hover{
+                //border: $btn 2px solid;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+
+    .content {
+
+        width: 530PX;
+        margin-top: 101px;
+
+
+        h1 {
+            color: $write;
+            font-size: 40px;
+            line-height: 44px;
+            font-weight: 900;
+
+
+            span {
+                color: $btn;
+            }
+
+        }
+
+        p {
+            color: $write;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+            margin-top: 12px;
+        }
+    }
+
+}
+
+.treine {
+    margin-top: -60px;
+
+
+    .container {
+        background-color: $brandi;
+
+    }
+
+    .content1 {
+        display: flex;
+        flex-direction: row;
+
+        .conteudo {
+
+            width: 530px;
+            margin-left: 46px;
+
+            h2 {
+                font-size: 32px;
+                color: $write;
+                font-weight: 700;
+                line-height: 44px;
+                margin-top: 80px;
+            }
+
+            p {
+                font-size: 16px;
+                color: $write;
+                font-weight: 400;
+                line-height: 24px;
+                margin-top: 20px;
+            }
+        }
+
+        .image {
+            margin: 48px 47px 47px 80px;
+        }
+    }
+
+
+    .content2 {
+        background-color: $title;
+        text-align: center;
+
+        .eTem {
+
+            color: $write;
+            width: 1047px;
+            padding: 15px 47px 14px 46px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 27px;
+
+
+        }
+    }
+}
+
+.beneficios {
+
+
+    h2 {
+        font-size: 32px;
+        line-height: 44px;
+        font-weight: 700;
+        color: $title;
+        margin-top: 80px;
+    }
+
+    h3 {
+        color: $texto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 44px;
+        margin-bottom: 80px;
+    }
+
+    .escolha {
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        column-gap: 33px;
+
+
+        .content {
+
+            display: flex;
+            column-gap: 33px;
+
+
+
+            h4 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 44px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 25px;
+
+            }
+
+        }
+
+        img {
+            margin-top: -56px;
+
+        }
+    }
+}
+
+.confira {
+    background-color: #EFEFEF;
+    width: 100%;
+    padding-top: 151px;
+    margin-top: -71px;
+    padding-bottom: 100px;
+
+    .container {
+
+        h4 {
+            font-size: 32px;
+            line-height: 44px;
+            font-weight: 700;
+            color: $title;
+            width: 745px;
+            margin-bottom: 37px;
+
+
+        }
+
+        .nossosParceiros {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 33px;
+
+        }
+
+        .empresas {
+
+            .parceiro {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 11px;
+
+            }
+        }
+    }
+}
+
+.faleConosco {
+    background-color: $brandi;
+
+
+    h5 {
+        color: $write;
+        font-size: 32px;
+        line-height: 110%;
+        font-weight: 700;
+        padding-top: 100px;
+    }
+
+    p {
+        margin-top: 14px;
+        color: $write;
+
+    }
+
+    .container {
+        display: flex;
+        column-gap: 33px;
+
+        .image {
+            margin-top: 100px;
+        }
+    }
+
+    .formulario {
+
+
+        form {
+            margin-top: 29px;
+
+        }
+
+        label {
+            color: $write;
+            font-weight: 400;
+
+        }
+
+        input,
+        textarea {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #C2C2C2;
+            background-color: transparent;
+            height: 40px;
+            border-radius: 5px;
+            color: $write;
+            outline: none;
+
+            &:hover{
+                border: 2px solid $btn;
+                
+            }
+
+            &:focus{
+                border: 2px solid $btn;
+                
+            }
+
+        }
+
+        textarea {
+            height: 160px;
+        }
+
+        .btn {
+            @include btn();
+
+
+        }
+
+        .btnEnviar {
+            padding: 9px 34px;
+            width: 214px;
+
+            &:hover {
+                background-color: $write;
+            }
+        }
+    }
+
+    ul {
+        margin-top: 25px;
+        line-height: 110%;
+        font-size: 12px;
+        color: #FFFFFF;
+        list-style-position: inside;
+        list-style-type: square;
+        margin-bottom: 102px;
+    }
+}
+
+footer{
+    background-color: $title;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $write;
+        font-size: 14px;
+        
+
+        a{
+            color: $write;
+        }
+    }
+
+    .footer{
+        height: 81px;
+    }
+}

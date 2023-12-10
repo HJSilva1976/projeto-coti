@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  margin: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.heroSection {
+  background-image: url(../img/banner-empresas\ 1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 654px;
+}
+.heroSection .btn {
+  display: inline-block;
+  background-color: #16E5D2;
+  color: #000000;
+  border-radius: 3px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 11px 22px;
+  cursor: pointer;
+  margin-top: 23px;
+}
+.heroSection .btn:hover {
+  background-color: #003366;
+}
+.heroSection .header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.heroSection .header .container .retanguloLogo {
+  width: 150px;
+  height: 200px;
+  background-color: #FFFFFF;
+  margin-top: 1px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+.heroSection .header .container .retanguloLogo .logo {
+  margin: 38px 26px 40px 26px;
+}
+.heroSection .header .container .menu {
+  margin-top: 78px;
+}
+.heroSection .header .container .menu a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-left: 68px;
+  outline: none;
+}
+.heroSection .header .container .menu a:hover {
+  border-bottom: 2px solid #16E5D2;
+}
+.heroSection .redesSocias {
+  padding: 10px;
+  row-gap: 10px;
+  border-radius: 0 5px 5px 0;
+  background: #003366;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.heroSection .redesSocias a {
+  display: inline-block;
+}
+.heroSection .redesSocias a:hover {
+  transform: scale(1.1);
+}
+.heroSection .content {
+  width: 530PX;
+  margin-top: 101px;
+}
+.heroSection .content h1 {
+  color: #FFFFFF;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 900;
+}
+.heroSection .content h1 span {
+  color: #16E5D2;
+}
+.heroSection .content p {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.treine {
+  margin-top: -60px;
+}
+.treine .container {
+  background-color: #003366;
+}
+.treine .content1 {
+  display: flex;
+  flex-direction: row;
+}
+.treine .content1 .conteudo {
+  width: 530px;
+  margin-left: 46px;
+}
+.treine .content1 .conteudo h2 {
+  font-size: 32px;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 44px;
+  margin-top: 80px;
+}
+.treine .content1 .conteudo p {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.treine .content1 .image {
+  margin: 48px 47px 47px 80px;
+}
+.treine .content2 {
+  background-color: #1B1918;
+  text-align: center;
+}
+.treine .content2 .eTem {
+  color: #FFFFFF;
+  width: 1047px;
+  padding: 15px 47px 14px 46px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.beneficios h2 {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #1B1918;
+  margin-top: 80px;
+}
+.beneficios h3 {
+  color: #404040;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 80px;
+}
+.beneficios .escolha {
+  display: flex;
+  -moz-column-gap: 33px;
+       column-gap: 33px;
+}
+.beneficios .escolha .content {
+  display: flex;
+  -moz-column-gap: 33px;
+       column-gap: 33px;
+}
+.beneficios .escolha .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+.beneficios .escolha .content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.beneficios .escolha img {
+  margin-top: -56px;
+}
+
+.confira {
+  background-color: #EFEFEF;
+  width: 100%;
+  padding-top: 151px;
+  margin-top: -71px;
+  padding-bottom: 100px;
+}
+.confira .container h4 {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #1B1918;
+  width: 745px;
+  margin-bottom: 37px;
+}
+.confira .container .nossosParceiros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 33px;
+       column-gap: 33px;
+}
+.confira .container .empresas .parceiro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.faleConosco {
+  background-color: #003366;
+}
+.faleConosco h5 {
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 110%;
+  font-weight: 700;
+  padding-top: 100px;
+}
+.faleConosco p {
+  margin-top: 14px;
+  color: #FFFFFF;
+}
+.faleConosco .container {
+  display: flex;
+  -moz-column-gap: 33px;
+       column-gap: 33px;
+}
+.faleConosco .container .image {
+  margin-top: 100px;
+}
+.faleConosco .formulario form {
+  margin-top: 29px;
+}
+.faleConosco .formulario label {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.faleConosco .formulario input,
+.faleConosco .formulario textarea {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #C2C2C2;
+  background-color: transparent;
+  height: 40px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  outline: none;
+}
+.faleConosco .formulario input:hover,
+.faleConosco .formulario textarea:hover {
+  border: 2px solid #16E5D2;
+}
+.faleConosco .formulario input:focus,
+.faleConosco .formulario textarea:focus {
+  border: 2px solid #16E5D2;
+}
+.faleConosco .formulario textarea {
+  height: 160px;
+}
+.faleConosco .formulario .btn {
+  display: inline-block;
+  background-color: #16E5D2;
+  color: #000000;
+  border-radius: 3px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 11px 22px;
+  cursor: pointer;
+}
+.faleConosco .formulario .btn:hover {
+  background-color: #003366;
+}
+.faleConosco .formulario .btnEnviar {
+  padding: 9px 34px;
+  width: 214px;
+}
+.faleConosco .formulario .btnEnviar:hover {
+  background-color: #FFFFFF;
+}
+.faleConosco ul {
+  margin-top: 25px;
+  line-height: 110%;
+  font-size: 12px;
+  color: #FFFFFF;
+  list-style-position: inside;
+  list-style-type: square;
+  margin-bottom: 102px;
+}
+
+footer {
+  background-color: #1B1918;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+footer .container a {
+  color: #FFFFFF;
+}
+footer .footer {
+  height: 81px;
+}/*# sourceMappingURL=style.css.map */
